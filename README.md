@@ -4,7 +4,6 @@
 
 ##### Serão aplicado conceitos de:
 
-# Markdown
     - [x] Criação de variável utilizando const ou let.
     - [x] Template Strings
     - [x] TypeOf()
