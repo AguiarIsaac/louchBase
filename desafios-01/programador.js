@@ -5,7 +5,7 @@ const users = [
 ]
 
 for(let i = 0; i < users.length; i++){
-    console.log(`The user ${users[i].name}, works with ${users[i].technologies}`)
+    console.log(`The user ${users[i].name}, works with ${users[i].technologies.join(', ')}`)
 }
 
 function checkIfUserCss(user) {
