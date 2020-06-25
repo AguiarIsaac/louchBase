@@ -1,0 +1,19 @@
+.mensage {
+    text-align: center;
+    margin-top: 40px;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #2ECCFA;
+}
+
+a {
+    text-align: center;
+    color:white;
+    text-decoration: none;
+}
+a:hover {
+    color: #2ECCFA;
+    transition: 400ms;
+}

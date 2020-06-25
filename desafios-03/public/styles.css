@@ -1,0 +1,52 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+
+:root {
+    --color-blue: #2ECCFA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 30px;
+    border-bottom: 1px solid var(--color-blue);
+    background: rgba(68, 91, 100, 0.1);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--color-blue);
+    transition: color 300ms;
+}
+
+.home {
+    text-align: center;
+    padding-top: 32px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 500px;
+}
+
+.lounch {
+    color: orange;
+}
