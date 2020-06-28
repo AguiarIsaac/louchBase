@@ -1,6 +1,7 @@
 //Importação das funções
 const express = require('express')
 const nunjucks = require('nunjucks')
+const curses = require('./data') //Importa arquivo externo
 
 const server = express()
 
@@ -13,7 +14,8 @@ server.listen(5000, function(){
 server.set('view engine', 'njk')
 
 nunjucks.configure('views', {
-    express: server
+    express: server,
+    autoescape: false, //Habilita Htmls dentro de variaveis
 })
 
 //Importação de arquivos estaticos
@@ -30,7 +32,12 @@ server.get('/about', function(req, res){
 })
 
 server.get('/courses', function(req, res){
-    return res.render('courses')
+    return res.render('courses', { curses: curses })
+})
+
+server.get('/curses/:id', function(req, res) { // ao clicar e ser adicionado a url o id, o req.params pega esse valor e salva na variavel e retorna com um redirect.
+    const id = req.params.id
+    return res.redirect(`https://rocketseat.com.br/${id}`)
 })
 
 server.use(function(req, res) {

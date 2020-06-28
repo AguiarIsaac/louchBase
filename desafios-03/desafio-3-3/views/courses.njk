@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}  {#Estenção deve ser de acordo com a que a engine está rodando#}
+
+{% block head %}
+    <link rel="stylesheet" href="desafio-2-3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <title>Courses - RocketSeat</title>
+{% endblock %}
+
+{% block content %}
+    <section class="cards">
+            {% for curse in curses %}
+                <div class="card" id="{{curse.id}}">
+                    <div class="card_image-container">
+                        <img src="{{curse.img_url}}" alt="Imagem do curso {{curse.id}}">
+                    </div>
+                
+                    <div class="card_content">
+                        <p>{{curse.content}}</p>
+                    </div>
+
+                    <div class="card_info">
+                        <p>{{curse.modules}}</p>
+                        <p class="card_price" id="{{curse.id}}">{{curse.price}}</p>
+                    </div>
+                </div>
+            {%endfor%}
+    </section>
+    <script src="desafio-2-3.js"></script>
+{% endblock %}

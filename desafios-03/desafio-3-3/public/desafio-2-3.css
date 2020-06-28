@@ -45,11 +45,11 @@ section {
      color: var(--color-starter);
  }
 
- .card_content p .lounch_base {
+ .card_content p .lounchbase {
      color: var(--color-lounch);
  }
 
- .card_content p .go_stack {
+ .card_content p .gostack {
      color: var(--color-go);
  }
 
@@ -72,66 +72,10 @@ section {
     background-color: var(--color-starter);
 }
 
-.card_price#lounch_base {
+.card_price#launchbase {
     background-color: var(--color-lounch);
 }
 
-.card_price#go_stack {
+.card_price#gostack {
     background-color: var(--color-go);
-}
-
-/*--> MODAL <--*/
-
-.modal-overlay {
-    background-color: rgba( 0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal {
-    background-color: white;
-    width: 90%;
-    height: 90%;
-    margin: 5vh auto;
-    position: relative;
-    border-radius: 6px;
-}
-
-
-.buttons {
-    color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    cursor: pointer;
-}
-
-/*-->MODAL ACTIVE<--*/
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-iframe {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
-    border-radius: 6px;
-}
-
-.modal.maxsize {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 1;
-    visibility: visible;
 }
