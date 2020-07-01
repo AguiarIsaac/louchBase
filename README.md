@@ -1,23 +1,98 @@
 # Desafios do treinamento LouchBase da **Rocketseat**.
 
-#### Desafios criados pela equipe da **Rocketseat** para testar os conhecimentos e fixar conteudos.
+## Desafios do módulo-1 Introdução a linguagem de programação JavaScript
 
-##### Serão aplicado conceitos de:
+### Criação de variáveis
+* Var - valor pode ser alterado, escopo global:
 
-    - [x] Criação de variável utilizando const ou let.
-    - [x] Template Strings
-    - [x] TypeOf()
-    - [x] Estruturas condicionais
-    - [x] Operadores de comparação, lógicos e aritméticos
+```
+ var text = 'value'
+```	
+* Let - Valor pode ser alterado, visivel apenas dentro de seu escopo:
 
-    - [x] Criação de Objetos
-    - [x] Criação de aarays
-    - [x] Estruturas de repetição
-    - [x] Escopo
-    - [x] Tratamento de arquivos dentro de array
+```
+let text = 'value'
+```
 
-    - [x] Funções do console
-    - [x] Criação de Funções
-    - [x] Formatação e organização do código
-    - [x] Codar preferencialmente em Inglês
-    - [x] comentários no código
+* Const - Valor não muda diretamente, escopo global:
+
+```
+const text = 'value'
+```
+### Criação de Arrays:
+```
+const list = [1, 2, 3, 4, 5...]
+```
+### Criação de Objetos:
+```
+const students = { // A constante em si não pode mudar seu valor, porem as propiedades dentro dela sim, como mudar as notas, idade ou nome.
+    name: 'student',
+    age: 15,
+    class: '5°-b'
+    grades: [10, 7, 6, 3]
+}
+```
+### Funções e parametros:
+```
+function nameFunction(parameters) {
+    code block
+}
+nameFunction(parameters) // Executa a função
+```
+
+### Template strings: // Com template strings é possivel realizar expressões dentro da string
+```
+`The student have ${varNota}!!`
+```
+
+### Estrutura de condição IF:
+```
+if(condition) {
+    code block
+}
+```
+
+### Estrutura de repetição FOR:
+```
+for(boot; condition; expression) {
+    code block
+}
+```
+
+## Desafios do Módulo-2 Introdução a HTML5 e CSS3
+
+### HTML semantico:
+```
+<html>
+    <head>
+        Metadados
+    </head>
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+
+        <main>
+            <article></article>
+            <article></article>
+        </main>
+
+        <footer>
+            <ul>
+                <li></li>
+            </ul>
+        </footer>
+    </body>
+</html>
+```
+
+* Classes
+* Id
+* Endentação de HTML
+
+* Estilização de páginas
+* Grid Layout
+* Animações
+* Reações a ações realizadas na página
+
+Desafios do módulo-3
