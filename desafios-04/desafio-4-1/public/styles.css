@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /*Importação de fontes*/
+
+:root { /* Criação de variaveis para cores*/
+    --primary-color: #33194c;
+    --secundary-color: #b4b4c7;
+}
+
+* { /*Em todo o documento, zera as margens, bordas e preenchimentos automaticos*/
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body { /*Em todo Body será utilizado a fonte e a cor selecionada*/
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secundary-color);
+}
+
+header { /*Cor selecionada, largura de 100% da tela, preenchimento de 32px, texto alinhado ao centro e incluir preenchimento respeitando a largura e altura total do elemento*/
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links { /*Tamanho da fonte*/
+    font-size: 24px;
+    
+}
+
+.links a + a { /*Aplicar margem caso existe um elemento igual a sua esquerda*/
+    margin-left: 32px;
+}
+
+.links a { /*Cor, remove o underline, posição relativa*/
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover { /*Ao passar o mouse por cima, muda cor*/
+    color:#f9d0a7;
+}
+
+.links a::after { /*Criação de pseudo elemento ao passar o mouse*/
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background-color: #f9d0a7;
+}
+
+.links a:hover::after { /*Efeit de transição do pseudo elemento*/
+    width: 100%;
+    transition: width 250ms ease-in-out;
+}
