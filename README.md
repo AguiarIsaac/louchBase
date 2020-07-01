@@ -97,4 +97,26 @@ for(boot; condition; expression) {
 * Animações
 * Reações a ações realizadas na página
 
-Desafios do módulo-3...
+## Desafios do módulo-3
+
+* Instalação e configuração do [Node.Js] (https://nodejs.org/en/)
+* instalação do Express
+* Nodemon
+* Template Engine [Nunjucks] (https://mozilla.github.io/nunjucks/)
+
+### Configuração do servidor:
+
+* Importação de funções
+* Configuração da template engine
+* Importação de arquivos externos(folhas de estilos e scripts)
+* abertura de portas
+* Configuração de rotas
+
+### Estrutura de Páginas dinâmicas
+### Dados inseridos de forma dinâmica no documento HTML
+
+## Desafios do módulo-4
+
+### Separação das rotas do arquivo Server
+### Animações com CSS
+### Pseudo elementos
