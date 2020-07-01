@@ -99,10 +99,10 @@ for(boot; condition; expression) {
 
 ## Desafios do módulo-3
 
-* Instalação e configuração do [Node.Js] (https://nodejs.org/en/)
+* Instalação e configuração do [Node.Js](https://nodejs.org/en/)
 * instalação do Express
 * Nodemon
-* Template Engine [Nunjucks] (https://mozilla.github.io/nunjucks/)
+* Template Engine [Nunjucks](https://mozilla.github.io/nunjucks/)
 
 ### Configuração do servidor:
 
