@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://google.com.br",
+      "name": "Dan Brown",
+      "birth": -23890291200000,
+      "formation": "mestrado",
+      "type_class": "presencial",
+      "services": "Lógica, POO",
+      "created_at": 1593884400264
+    }
+  ]
+}

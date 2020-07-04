@@ -140,3 +140,42 @@ a:hover { /*Ao passar o mouse por cima, muda cor*/
     text-transform: uppercase;
     display: inline-block;
 }
+
+/* FORM */
+
+input {
+    width: 100%;
+    background:none;
+    outline: none;
+    font-weight: bold;
+    color:#555;
+    font-size: 18px;
+}
+
+select {
+    background: #fd6a37;
+    outline: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+input::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    width: 90%;
+    margin-top: 32px;
+    background-color: #fd6a37;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}

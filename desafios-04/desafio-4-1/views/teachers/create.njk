@@ -1,0 +1,57 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <form class="card" method="POST" action="/teachers">
+        <section class="avatar"></section>
+
+        <section class="details">
+            <h3>Novo professor(a)</h3>
+
+            <div class="item">
+                <div>Avatar url</div>
+                <div><input type="url" name="avatar_url" placeholder="https://"></div>
+            </div>
+
+            <div class="item">
+                <div>Nome</div>
+                <div><input type="text" name="name" placeholder="Nome do professor"></div>
+            </div>
+
+            <div class="item">
+                <div>Data de nascimento</div>
+                <div><input type="date" name="birth"></div>
+            </div>
+
+            <div class="item">
+                <div>Grau de escolaridade</div>
+                <div>
+                    <select name="formation">
+                        <option value="ensino medio">Ensino médio</option>
+                        <option value="graduação" selected>Graduação</option>
+                        <option value="pos graduacao">Pós graduação</option>
+                        <option value="mestrado">Mestrado</option>
+                        <option value="doutorado">Doutorado</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Tipo de Aula</div>
+                <div>
+                    <span><input type="radio" name="type_class" value="presencial" checked>Presencial</span>
+                    <span><input type="radio" name="type_class" value="ead">À distância</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Área de atuação</div>
+                <div>
+                    <input type="text" name="services" placeholder="separe as áreas por vírgula.">
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </section>
+    </form>
+{% endblock %}

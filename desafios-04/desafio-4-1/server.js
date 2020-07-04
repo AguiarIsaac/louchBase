@@ -7,6 +7,7 @@ const routes = require('./routes')
 const server = express()
 
 //Middlewares (Funções que antecedem as requisições(req), e respostas(res), das rotas)
+server.use(express.urlencoded({extended: true }))
 server.use(express.static('public')) //inportação de arquivos estaticos
 server.use(routes) //Utilização da função que foi importada
 
