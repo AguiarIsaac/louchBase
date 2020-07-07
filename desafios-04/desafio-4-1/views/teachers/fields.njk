@@ -1,0 +1,43 @@
+<div class="item">
+    <div>Avatar url</div>
+    <div><input type="url" name="avatar_url" placeholder="https://" value="{{teacher.avatar_url}}"></div>
+</div>
+
+<div class="item">
+    <div>Nome</div>
+    <div><input type="text" name="name" placeholder="Nome do professor" value="{{teacher.name}}"></div>
+</div>
+
+<div class="item">
+    <div>Data de nascimento</div>
+    <div><input type="date" name="birth" value="{{teacher.birth}}"></div>
+</div>
+
+<div class="item">
+    <div>Grau de escolaridade</div>
+    <div>
+        <select name="formation">
+            <option value="ensino medio" {% if teacher.formation == "ensino medio"%} selected {%endif%} >Ensino médio</option>
+            <option value="graduação" {% if teacher.formation == "graduação"%} selected {%endif%} >Graduação</option>
+            <option value="pos graduacao" {% if teacher.formation == "pos graduacao"%} selected {%endif%} >Pós graduação</option>
+            <option value="mestrado" {% if teacher.formation == "mestrado"%} selected {%endif%} >Mestrado</option>
+            <option value="doutorado" {% if teacher.formation == "doutorado"%} selected {%endif%} >Doutorado</option>
+            <option value="phd" {% if teacher.formation == "phd"%} selected {%endif%} >PhD</option>
+        </select>
+    </div>
+</div>
+
+<div class="item">
+    <div>Tipo de Aula</div>
+    <div>
+        <span><input type="radio" name="type_class" value="presencial" checked>Presencial</span>
+        <span><input type="radio" name="type_class" value="ead">À distância</span>
+    </div>
+</div>
+
+<div class="item">
+    <div>Área de atuação</div>
+    <div>
+        <input type="text" name="services" placeholder="separe as áreas por vírgula." value="{{teacher.services}}">
+    </div>
+</div>
