@@ -27,6 +27,8 @@ routes.get('/teachers/:id', teachers.show )
 
 routes.get('/teachers/:id/edit', teachers.edit )
 
+routes.put('/teachers', teachers.put)
+
 
 //Exporta o código
 module.exports = routes
