@@ -195,3 +195,7 @@ button[type="submit"], .button {
 .button:hover {
     color: white;
 }
+
+#form-delete button {
+    background-color: red;
+}
