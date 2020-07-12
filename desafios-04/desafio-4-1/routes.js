@@ -12,15 +12,14 @@ routes.get('/students', function(req, res) {
     return res.render('students')
 })
 
-routes.get('/teachers', function(req, res) {
-    return res.render('teachers/index')
-})
+routes.get('/teachers', teachers.index )
 
 routes.get('/teachers/create', function(req, res) {
     return res.render('teachers/create')
 })
 
 //Rotas utilizando função externa
+
 routes.post('/teachers', teachers.post )
 
 routes.get('/teachers/:id', teachers.show )

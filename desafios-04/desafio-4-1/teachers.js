@@ -3,6 +3,18 @@ const fs = require('fs')
 const data = require('./data.json')
 const { age, date } = require('./functions')
 
+
+exports.index =  function(req, res) {
+    
+    const professores = data.teachers
+
+    for(let professor of professores){
+        professor.services = String(professor.services)
+        professor.services = professor.services.split(',')
+    }
+    
+    return res.render('teachers/index', { teachers: professores })
+}
 // Criação
 exports.post = function(req, res) {
     const keys = Object.keys(req.body) // Irá Retornar um objeto com os names dos inputs
@@ -46,6 +58,8 @@ exports.show = function(req, res) {
     })
 
     if(!foundTeacher) return res.send('Teachers Not Found!!!')
+
+    foundTeacher.services = String(foundTeacher.services)
 
     const teacher = {
         ...foundTeacher,
