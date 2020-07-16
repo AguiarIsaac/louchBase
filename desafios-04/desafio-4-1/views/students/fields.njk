@@ -1,0 +1,44 @@
+<div class="item">
+    <div>Avatar url</div>
+    <div><input type="url" name="avatar_url" placeholder="https://" value="{{student.avatar_url}}"></div>
+</div>
+
+<div class="item">
+    <div>Nome</div>
+    <div><input type="text" name="name" value="{{student.name}}"></div>
+</div>
+
+<div class="item">
+    <div>Email</div>
+    <div><input type="email" name="email" placeholder="nome@email.com" value="{{student.email}}"></div>
+</div>
+
+<div class="item">
+    <div>Data de nascimento</div>
+    <div><input type="date" name="birth" value="{{student.birth}}"></div>
+</div>
+
+<div class="item">
+    <div>Ano escolar</div>
+    <div>
+        <select name="school_year">
+            <option value="3°F" {% if student.school_year == "3°F"%} selected {%endif%} >3° Ano - Ensino Fundamental</option>
+            <option value="4°F" {% if student.school_year == "4°F"%} selected {%endif%} >4° Ano - Ensino Fundamental</option>
+            <option value="5°F" {% if student.school_year == "5°F"%} selected {%endif%} >5° Ano - Ensino Fundamental</option>
+            <option value="6°F" {% if student.school_year == "6°F"%} selected {%endif%} >6° Ano - Ensino Fundamental</option>
+            <option value="7°F" {% if student.school_year == "7°F"%} selected {%endif%} >7° Ano - Ensino Fundamental</option>
+            <option value="8°F" {% if student.school_year == "8°F"%} selected {%endif%} >8° Ano - Ensino Fundamental</option>
+            <option value="9°F" {% if student.school_year == "9°F"%} selected {%endif%} >9° Ano - Ensino Fundamental</option>
+            <option value="1°M" {% if student.school_year == "1°M"%} selected {%endif%} >1° Ano - Ensino Médio</option>
+            <option value="2°M" {% if student.school_year == "2°M"%} selected {%endif%} >2° Ano - Ensino Médio</option>
+            <option value="3°M" {% if student.school_year == "3°M"%} selected {%endif%} >3° Ano - Ensino Médio</option>
+        </select>
+    </div>
+</div>
+
+<div class="item">
+    <div>Carga Horária</div>
+    <div><input type="number" name="workload" value="{{student.workload}}"></div>
+</div>
+ 
+<button type="submit">Salvar</button>

@@ -2,7 +2,7 @@
 
 :root { /* Criação de variaveis para cores*/
     --primary-color: #1192fa;
-    --sedundary-color: #95f5ac;
+    --sacundary-color: #95f5ac;
 }
 
 * { /*Em todo o documento, zera as margens, bordas e preenchimentos automaticos*/
@@ -38,8 +38,13 @@ header { /*Cor selecionada, largura de 100% da tela, preenchimento de 32px, text
     position: relative;
 }
 
+.links a.active {
+    font-weight: bold;
+    color: var(--sacundary-color);
+}
+
 a:hover { /*Ao passar o mouse por cima, muda cor*/
-    color: var(--sedundary-color);
+    color: var(--sacundary-color);
 }
 
 .links a::after { /*Criação de pseudo elemento ao passar o mouse*/
@@ -49,7 +54,7 @@ a:hover { /*Ao passar o mouse por cima, muda cor*/
     height: 2px;
     left: 0;
     bottom: -3px;
-    background-color: var(--sedundary-color);
+    background-color: var(--sacundary-color);
 }
 
 .links a:hover::after { /*Efeit de transição do pseudo elemento*/
@@ -79,15 +84,6 @@ a:hover { /*Ao passar o mouse por cima, muda cor*/
     to {
         opacity: 1;
     }
-}
-
-.avatar {
-    background: 
-        url('https://source.unsplash.com/collection/10553730/500x500')
-        no-repeat
-        center center / cover;
-        width: 320px;
-    
 }
 
 /* -->DETAILS<-- */
@@ -265,7 +261,8 @@ tbody tr td:first-child span {
     text-align: center;
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a,
+.table-card > a {
     background-color: var(--primary-color);
     padding: 8px 16px;
     text-decoration: none;
@@ -273,4 +270,13 @@ tbody tr td:last-child a {
     color:white;
     font-size: 12px;
     border-radius: 4px;
+}
+
+.table-card > a {
+    margin-bottom: 16px;
+    display: inline-block;
+}
+.email {
+    text-decoration: underline;
+    color: #1a5ec9;
 }

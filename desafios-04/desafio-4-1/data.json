@@ -1,80 +1,61 @@
 {
-  "teachers": [
+  "students": [
     {
-      "id": "1",
-      "avatar_url": "https://source.unsplash.com/collection/8491653/500x500",
-      "name": "Dan Brown",
-      "birth": -23890291200000,
-      "formation": "mestrado",
-      "type_class": "presencial",
-      "services": "Lógica, POO, algoritmo",
-      "created_at": 1593884400264
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/6800490/500x500",
+      "name": "teste 6.6",
+      "email": "teste6@email.com",
+      "birth": 1286668800000,
+      "school_year": "3° Ano - Ensino Fundamental",
+      "workload": "6",
+      "services": "undefined"
     },
     {
       "id": 3,
       "avatar_url": "https://source.unsplash.com/collection/10553730/500x500",
-      "name": "Luana Rayssa",
-      "birth": 800236800000,
-      "formation": "pos graduacao",
+      "name": "teste 7.7",
+      "email": "teste7@email.com",
+      "birth": 978307200000,
+      "school_year": "3° Ano - Ensino médio",
+      "workload": "30",
+      "services": "undefined"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/10553730/500x500",
+      "name": "teste 1.1",
+      "birth": -23890291200000,
+      "formation": "phd",
       "type_class": "presencial",
       "services": [
         "Nutrição",
         " Pediatria"
       ],
-      "created_at": 1594034283116
+      "created_at": 1594817372538
     },
     {
-      "id": "4",
-      "avatar_url": "https://source.unsplash.com/collection/4821422/500x500",
-      "name": "Leandro Aguiar",
-      "birth": 1047254400000,
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/6800490/500x500",
+      "name": "teste 2.2",
+      "birth": 1355270400000,
       "formation": "doutorado",
       "type_class": "presencial",
       "services": [
-        "Física",
-        " química",
-        " POO"
+        "fisica"
       ],
-      "created_at": 1594034338777
+      "created_at": 1594817442787
     },
     {
-      "id": 5,
-      "avatar_url": "https://source.unsplash.com/collection/517198/500x500",
-      "name": "Dan Brown chico oliveira asas testes",
-      "birth": -23890291200000,
-      "formation": "mestrado",
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/353844/500x500",
+      "name": "teste 3.3",
+      "birth": 1045699200000,
+      "formation": "pos graduacao",
       "type_class": "presencial",
-      "services": [
-        "Lógica",
-        " POO"
-      ],
-      "created_at": 1594385462550
-    },
-    {
-      "id": 6,
-      "avatar_url": "https://source.unsplash.com/collection/8874679/500x500",
-      "name": "Dan Brown",
-      "birth": -23890291200000,
-      "formation": "phd",
-      "type_class": "presencial",
-      "services": [
-        "Lógica",
-        " POO"
-      ],
-      "created_at": 1594385492589
-    },
-    {
-      "id": 7,
-      "avatar_url": "https://source.unsplash.com/collection/1603248/500x500",
-      "name": "Dan Brown chico oliveira asas testes",
-      "birth": -23890291200000,
-      "formation": "mestrado",
-      "type_class": "presencial",
-      "services": [
-        "Lógica",
-        " POO"
-      ],
-      "created_at": 1594386483297
+      "services": "mecânica",
+      "created_at": 1594817506022
     }
   ]
 }
